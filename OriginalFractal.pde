@@ -33,8 +33,8 @@ public void draw()
   rect(3,245,15,10);
   rect(0,250,5,5);
   fill(90);
-  circle(5,255,6);
-  circle(15,255,6);
+  ellipse(5,255,6,6);
+  ellipse(15,255,6,6);
   //fractal 2
   fill(237,229,74);
   stroke(0);
@@ -43,16 +43,16 @@ public void draw()
 
 public void myFractal(int x, int y, int siz)
 {
- circle(x,y,siz); 
+ ellipse(x,y,siz,siz); 
  if(siz > 10)
  {
-  myFractal(x/2,y,siz/2); 
+  myFractal(int(x/1.25),y,int(siz/1.25)); 
  }
 }
 
 public void myFractal2(int x, int y, int siz)
 {
- circle(x,y,siz);
+ ellipse(x,y,siz,siz);
  if(siz > 10)
  {
   fill(255);
