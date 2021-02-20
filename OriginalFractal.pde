@@ -46,7 +46,7 @@ public void myFractal(int x, int y, int siz)
  circle(x,y,siz); 
  if(siz > 10)
  {
-  myFractal(int(x/1.25),y,int(siz/1.25)); 
+  myFractal(x/2,y,siz/2); 
  }
 }
 
